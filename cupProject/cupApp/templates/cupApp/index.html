@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Chelsea Gregory</h1>p
+
+<!--for page view to list functions in views-->
+<ul>
+    {% if viewAll %}
+        {% for eachCup in viewAll %}
+            <li>{{eachCup.name}}</li>
+        {% endfor %}}
+    {% else %}
+        <p>Error</p>
+    {% endif %}
+</ul>
+
+<h1>After 2012</h1>
+<ul>
+    {% if after2012 %}
+        {% for eachCup in after2012 %}
+            <li>{{eachCup.name}}</li>
+        {% endfor %}}
+    {% else %}
+        <p>Error</p>
+    {% endif %}
+
+
+</ul>
+
+</body>
+</html>
